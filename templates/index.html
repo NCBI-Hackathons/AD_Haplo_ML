@@ -1,0 +1,21 @@
+<head>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #383838;">
+
+<form class="" action="" method="post" enctype="multipart/form-data">
+    <div class="input-group" style="color: white; width: 70%; top: 20%; left: 5%; margin: 50px; margin-top: 20%">
+        {{ form.csrf_token }}
+        {{ form.file }}
+        <label for="window">Window Size: </label>
+        <input class="form-control" type="number" value="10000">
+        <br>
+        <label for="p_value">p-value: </label>
+        <input class="form-control" type="text" value="5"> x10^ <input class="form-control" type="number" value="-12">
+        <br>
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </div>
+</form>
+
+</body>
