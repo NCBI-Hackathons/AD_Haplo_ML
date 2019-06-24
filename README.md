@@ -29,3 +29,21 @@ We will be using Alzheimer's GWAS data as a test case for this general tool. Var
 This data will be input into a HMM that will learn the patterns of
 
 This web interface will be used to download gNOMAD regions for GWAS studies.
+
+## How to Set Up a Local Test Copy of the Web App
+
+Switch to this branch with ```git checkout app``` and make sure it's up to date with ```git pull```.
+
+Navigate into AD_Haplo_ML: ```cd AD_Haplo_ML```
+
+Create a python3 virtual env: ```python3 -m venv venv```
+
+Activate the virtual env: ```source venv/bin/activate```
+
+Install requirements: ```pip install -r requirements.txt```
+
+Set the app environment variable: ```export FLASK_APP=AD_Haplo_ML.py```
+
+You can turn on debug if you wish with ```export FLASK_ENV=development```
+
+Run the server (on 127.0.0.1:5000 by default): ```flask run```
